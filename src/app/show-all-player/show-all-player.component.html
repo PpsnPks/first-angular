@@ -1,0 +1,72 @@
+<span class="text-[50px] font-bold flex justify-center"> 5 Players </span>
+<div class="w-full flex items-center justify-evenly">
+	<div *ngFor="let person of playerList; let i = index" [routerLink]="['player/'+ person.id]" routerLinkActive="active" class="block w-1/6 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 scale-90 hover:scale-95  opacity-80 hover:opacity-100">
+		<div class="relative overflow-hidden bg-no-repeat flex justify-center">
+			<img class="rounded-t-lg w-[256px] h-[460px]" src="{{person.picUrl}}" alt="" />
+		</div>
+		<div class="p-2 pb-4">
+			<p class="text-base text-neutral-600 dark:text-neutral-200">
+				{{person.desc}}
+			</p>
+		</div>
+	</div>
+</div>
+
+<!--<div class="w-full flex items-center justify-evenly mt-12" *ngFor="let person of playerList; let i = index">
+	<div class="block w-1/6 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+		<div class="relative overflow-hidden bg-cover bg-no-repeat flex justify-center">
+			<img class="rounded-t-lg w-[256px] h-[460px]" src="../../assets/image/Screenshot1.png" alt="" />
+		</div>
+		<div class="p-6">
+			<p class="text-base text-neutral-600 dark:text-neutral-200">
+				Some quick example text to build on the card title and make up the
+				bulk of the card's content.
+			</p>
+		</div>
+	</div>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis deserunt ipsam doloremque dolorum! Molestias animi blanditiis harum saepe voluptate, deserunt eos dolorem. Veritatis fugiat mollitia repellendus a ab iusto!</p>
+	<div class="block w-1/6 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+		<div class="relative overflow-hidden bg-cover bg-no-repeat flex justify-center">
+			<img class="rounded-t-lg w-[256px] h-[460px]" src="../../assets/image/Screenshot2.png" alt="" />
+		</div>
+		<div class="p-6">
+			<p class="text-base text-neutral-600 dark:text-neutral-200">
+				Some quick example text to build on the card title and make up the
+				bulk of the card's content.
+			</p>
+		</div>
+	</div>	
+	<div class="block w-1/6 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+		<div class="relative overflow-hidden bg-cover bg-no-repeat flex justify-center">
+			<img class="rounded-t-lg w-[256px] h-[460px]" src="../../assets/image/Screenshot1.png" alt="" />
+		</div>
+		<div class="p-6">
+			<p class="text-base text-neutral-600 dark:text-neutral-200">
+				Some quick example text to build on the card title and make up the
+				bulk of the card's content.
+			</p>
+		</div>
+	</div>
+	<div class="block w-1/6 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+		<div class="relative overflow-hidden bg-cover bg-no-repeat flex justify-center">
+			<img class="rounded-t-lg w-[256px] h-[460px]" src="../../assets/image/Screenshot1.png" alt="" />
+		</div>
+		<div class="p-6">
+			<p class="text-base text-neutral-600 dark:text-neutral-200">
+				Some quick example text to build on the card title and make up the
+				bulk of the card's content.
+			</p>
+		</div>
+	</div>
+	<div class="block w-1/6 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+		<div class="relative overflow-hidden bg-cover bg-no-repeat flex justify-center">
+			<img class="rounded-t-lg w-[256px] h-[460px]" src="../../assets/image/Screenshot1.png" alt="" />
+		</div>
+		<div class="p-6">
+			<p class="text-base text-neutral-600 dark:text-neutral-200">
+				Some quick example text to build on the card title and make up the
+				bulk of the card's content.
+			</p>
+		</div>
+	</div>
+</div>-->
